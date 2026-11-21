@@ -4,7 +4,7 @@
 
 One theme, five complete store designs: **fashion, electronics, cosmetics, home & living and grocery**. Switch between them from the admin panel in one click. Every design has a light and a dark mode.
 
-- Theme version: 1.6.1
+- Theme version: 1.6.2
 - Bagisto: 2.5.x
 - PHP: whatever your Bagisto 2.5 install needs (the theme code itself runs on PHP 8.2+)
 - Languages included: English and Turkish. Other locales fall back to English and can be translated by copying `src/Resources/lang/en/app.php`.
@@ -14,7 +14,7 @@ One theme, five complete store designs: **fashion, electronics, cosmetics, home 
 | Folder | Contents |
 |---|---|
 | `packages/McuShop/Theme` | Theme source code (no demo products; you add your own) |
-| `packages/McuShop/Core` | The shared "McuShop" admin menu used by the theme |
+| `packages/McuShop/Core` | The shared "McuShop" admin menu (loaded automatically by the theme, no registration needed) |
 | `public/themes/shop/mcushop` | Pre-built CSS/JS, so you do **not** need npm on the server |
 
 ## 1. Upload the files
@@ -26,14 +26,12 @@ Take a database and file backup first. Unzip the package into the **root folder 
 In `composer.json`, inside `autoload > psr-4`, add:
 
 ```json
-"McuShop\\Core\\": "packages/McuShop/Core/src",
 "McuShop\\Theme\\": "packages/McuShop/Theme/src",
 ```
 
 In `bootstrap/providers.php`, add to the list:
 
 ```php
-McuShop\Core\Providers\CoreServiceProvider::class,
 McuShop\Theme\Providers\ThemeServiceProvider::class,
 ```
 
