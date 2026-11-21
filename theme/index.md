@@ -1,5 +1,7 @@
 # McuShop Theme for Bagisto 2.5 – Installation & User Guide
 
+**[Buy the McuShop Theme – $59](https://1164974116393.gumroad.com/l/bmfisj)**
+
 One theme, five complete store designs: **fashion, electronics, cosmetics, home & living and grocery**. Switch between them from the admin panel in one click. Every design has a light and a dark mode.
 
 - Theme version: 1.6.1
@@ -110,3 +112,5 @@ One license = one store on one domain (plus its test copies). See `LICENSE.txt` 
 ## Support
 
 Contact the developer through the support link on the Bagisto listing.
+
+**[Buy the McuShop Theme](https://1164974116393.gumroad.com/l/bmfisj)**
