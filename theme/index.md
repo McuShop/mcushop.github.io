@@ -4,7 +4,7 @@
 
 One theme, five complete store designs: **fashion, electronics, cosmetics, home & living and grocery**. Switch between them from the admin panel in one click. Every design has a light and a dark mode.
 
-- Theme version: 1.6.4
+- Theme version: 1.6.5
 - Bagisto: 2.5.x
 - PHP: whatever your Bagisto 2.5 install needs (the theme code itself runs on PHP 8.2+)
 - Languages included: English and Turkish. Other locales fall back to English and can be translated by copying `src/Resources/lang/en/app.php`.
