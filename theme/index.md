@@ -4,7 +4,7 @@
 
 One theme, five complete store designs: **fashion, electronics, cosmetics, home & living and grocery**. Switch between them from the admin panel in one click. Every design has a light and a dark mode.
 
-- Theme version: 1.6.2
+- Theme version: 1.6.3
 - Bagisto: 2.5.x
 - PHP: whatever your Bagisto 2.5 install needs (the theme code itself runs on PHP 8.2+)
 - Languages included: English and Turkish. Other locales fall back to English and can be translated by copying `src/Resources/lang/en/app.php`.
@@ -29,11 +29,15 @@ In `composer.json`, inside `autoload > psr-4`, add:
 "McuShop\\Theme\\": "packages/McuShop/Theme/src",
 ```
 
-In `bootstrap/providers.php`, add to the list:
+In `bootstrap/providers.php`, add this line at the end of the `return [ ... ];` array, exactly as written (fully qualified class name, no `use` import needed):
 
 ```php
-McuShop\Theme\Providers\ThemeServiceProvider::class,
+McuShop\Theme\Providers\McuShopThemeServiceProvider::class,
 ```
+
+> The provider is named `McuShopThemeServiceProvider` so it can never clash with Bagisto's own `Webkul\Theme\Providers\ThemeServiceProvider`, which `bootstrap/providers.php` already imports. If you prefer the import style used in that file, `use McuShop\Theme\Providers\McuShopThemeServiceProvider;` is also safe.
+>
+> Updating from 1.6.2 or older: replace the old `McuShop\Theme\Providers\ThemeServiceProvider::class` line with the one above.
 
 ## 3. Run the commands (in the Bagisto root folder)
 
@@ -45,6 +49,8 @@ php artisan mcushop:install moda
 php artisan optimize:clear
 php artisan config:cache
 ```
+
+`php artisan storage:link` prints "ERROR The [public/storage] link already exists" when Bagisto's installer has already created the link. That message is harmless; just continue with the next command.
 
 The last argument of `mcushop:install` picks the starting design:
 
