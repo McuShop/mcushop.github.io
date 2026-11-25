@@ -9,6 +9,54 @@ One theme, five complete store designs: **fashion, electronics, cosmetics, home 
 - PHP: whatever your Bagisto 2.5 install needs (the theme code itself runs on PHP 8.2+)
 - Languages included: English and Turkish. Other locales fall back to English and can be translated by copying `src/Resources/lang/en/app.php`.
 
+## Features
+
+**Storefront**
+- Five complete sector designs (fashion, electronics, cosmetics, home & living, grocery). Switch with one setting in the admin panel; your store data is not touched.
+- Light and dark mode for every design, chosen by the visitor or following the device setting.
+- 35 original starter images (hero banners, category tiles, sign-in page), placed automatically in empty home page sections.
+- Smart search: product and category suggestions while typing, highlighted matches and popular searches.
+- Home page sections: hero, category tiles, product carousels, flash deals with countdown, promo tiles, brands, testimonials, FAQ, image + text and custom HTML.
+- Quick view and recently viewed products.
+
+**Product cards and product page**
+- Clean price display with a small "-15%" discount badge.
+- Rule-based card labels (free shipping, installments, gift...) by category and price range; low-stock notice.
+- Brand, colour swatches, rating or category line, price and labels stay aligned on every card in a row.
+- Variant products open a picker from "Add to cart" (bottom sheet on mobile).
+- Full-screen gallery with swipe, pinch zoom and swipe-down to close; sticky add-to-cart bar on mobile.
+
+**Cart, checkout and account**
+- Three-step checkout (Address › Shipping › Payment) on one page.
+- Cart, checkout, My Account, order and return pages designed for each sector.
+- Free-shipping progress bar in the mini cart (threshold and text set in the admin panel).
+- Redesigned sign-in, sign-up and password pages per sector.
+- Optional Distance Sales Agreement and Pre-information Form (required in Turkey, can be switched off elsewhere).
+
+**Quality**
+- Responsive WebP images sized for the screen; phones never download desktop images.
+- Lighthouse accessibility score 100; respects "reduce motion".
+- English and Turkish included; one "McuShop" admin menu for all settings.
+
+## What is included, and what is sold separately
+
+The theme package contains **only the theme** (`packages/McuShop/Theme`) and the shared McuShop admin menu (`packages/McuShop/Core`).
+
+The live demo also runs McuShop **add-ons that are sold separately** and are **not** part of the theme. In the demo they are marked with an "Add-on" badge:
+
+| Add-on (sold separately) | What it adds |
+|---|---|
+| Campaign Showcases | Campaign sections, deal of the day, campaign pages and ribbons |
+| Verified Buyer Reviews | Reviews only from real buyers, with a "Verified buyer" badge |
+| Questions & Answers | Product questions and answers on the product page |
+| Google Sign-In | Google One Tap and "Sign in with Google" |
+| Turkey Address | Province / district / neighbourhood address fields |
+| Shipping (Turkey) | Yurtiçi, Aras, MNG and PTT rates, labels and tracking |
+| PayTR, iyzico | Turkish payment gateways with installment tables |
+| KVKK & Cookies | Turkish privacy consent and cookie banner |
+| SMS & WhatsApp | Order notifications by SMS and WhatsApp |
+| Phone Verification (OTP) | Sign-in and sign-up with a phone code |
+
 ## What is in the package
 
 | Folder | Contents |
