@@ -159,9 +159,14 @@ For Nginx: `gzip on;` and `expires 1y;` for `/themes/` and `/storage/`.
 
 Unzip the new version over the old one, then run `php artisan migrate`, `php artisan optimize:clear` and `php artisan config:cache`. Your settings and uploaded images are kept.
 
-## 7. Translating to another language
+## 7. Languages and currencies
 
-Copy `packages/McuShop/Theme/src/Resources/lang/en` to a folder named after your locale code (for example `de`) and translate the values. Bagisto picks it up for that channel locale.
+- **23 languages ready:** the theme ships all Bagisto languages, including right-to-left Arabic, Persian and Hebrew. Texts Bagisto already translates (Add to cart, Search, Checkout...) use Bagisto's own translation; theme-only texts are translated in every language.
+- **Which languages the visitor sees:** the picker lists the languages added to your channel at Admin › Settings › Channels. Add a language there and the theme text appears in it right away.
+- **Languages added later:** the theme's home page sections are created in the new language automatically on its first visit. Untouched starter texts are translated; texts you wrote yourself are kept.
+- **Flags:** upload a flag image per language at Admin › Settings › Locales. Without one, a bundled flag is shown.
+- **Currencies:** add currencies to the channel and enter their exchange rates at Admin › Settings › Exchange Rates. The picker shows each currency's symbol and code; with a single currency it is shown for information only.
+- **Changing a text:** edit the matching file in `packages/McuShop/Theme/src/Resources/lang/<locale>/`, then run `php artisan optimize:clear`.
 
 ## License
 
