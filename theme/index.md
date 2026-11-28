@@ -4,10 +4,10 @@
 
 One theme, five complete store designs: **fashion, electronics, cosmetics, home & living and grocery**. Switch between them from the admin panel in one click. Every design has a light and a dark mode.
 
-- Theme version: 1.6.6
+- Theme version: 1.7.0
 - Bagisto: 2.5.x
 - PHP: whatever your Bagisto 2.5 install needs (the theme code itself runs on PHP 8.2+)
-- Languages included: English and Turkish. Other locales fall back to English and can be translated by copying `src/Resources/lang/en/app.php`.
+- Languages included: all 23 Bagisto languages, including right-to-left Arabic, Persian and Hebrew.
 
 ## Features
 
@@ -18,6 +18,8 @@ One theme, five complete store designs: **fashion, electronics, cosmetics, home 
 - Smart search: product and category suggestions while typing, highlighted matches and popular searches.
 - Home page sections: hero, category tiles, product carousels, flash deals with countdown, promo tiles, brands, testimonials, FAQ, image + text and custom HTML.
 - Quick view and recently viewed products.
+- Language and currency picker with flags and currency symbols; only one list opens at a time.
+- Image search: a camera button in the search box when Bagisto's Image Search setting is on.
 
 **Product cards and product page**
 - Clean price display with a small "-15%" discount badge.
@@ -25,6 +27,7 @@ One theme, five complete store designs: **fashion, electronics, cosmetics, home 
 - Brand, colour swatches, rating or category line, price and labels stay aligned on every card in a row.
 - Variant products open a picker from "Add to cart" (bottom sheet on mobile).
 - Full-screen gallery with swipe, pinch zoom and swipe-down to close; sticky add-to-cart bar on mobile.
+- Compare: an active "Remove from compare" state on cards and a dismissible compare bar at the bottom of the page (can be switched off per sector).
 
 **Cart, checkout and account**
 - Three-step checkout (Address › Shipping › Payment) on one page.
@@ -36,7 +39,8 @@ One theme, five complete store designs: **fashion, electronics, cosmetics, home 
 **Quality**
 - Responsive WebP images sized for the screen; phones never download desktop images.
 - Lighthouse accessibility score 100; respects "reduce motion".
-- English and Turkish included; one "McuShop" admin menu for all settings.
+- 23 languages included; texts Bagisto already translates use Bagisto's own translation. When you add a language later, the theme's home page sections are created in that language automatically.
+- One "McuShop" admin menu for all settings.
 
 ## What is included, and what is sold separately
 
@@ -119,6 +123,8 @@ All theme settings live under **Admin › McuShop** and **Admin › Configure �
 - **Appearance:** sector design, default light/dark mode, dark-mode logo.
 - **Product cards:** rotating card labels (e.g. "Free shipping", "Installments"), sold-count line, discount badge. Label texts are editable.
 - **Cart:** free-shipping progress bar threshold in the mini cart.
+- **Catalog › Features:** sectors that show the compare bar.
+- **Languages and currencies:** the picker lists the languages and currencies added to your channel (Admin › Settings › Channels). Upload a flag per language under Admin › Settings › Locales, otherwise a bundled flag is used. Add exchange rates for extra currencies.
 - **Header & general:** announcement bar, sticky header, support contacts, trust badges, back-to-top button.
 - **Turkish legal forms:** the Distance Sales Agreement and Pre-information Form are required by Turkish law. Stores outside Turkey can **switch them off** under Admin › Configure › McuShop › Checkout. The templates are examples; have them checked by a lawyer.
 - **Home page sections:** Admin › Appearance › Themes, as in standard Bagisto.
